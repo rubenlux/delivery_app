@@ -1,0 +1,200 @@
+.write {
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.writeForm {
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+
+  /* background-color: rgb(235, 35, 35); */
+}
+
+.writeFormGroup {
+  display: flex;
+  flex-direction: column;
+}
+.writeFormSelect {
+  width: 20%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.select_cat {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  font-family: "Times New Roman", Times, serif;
+}
+.deleteCatbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: red;
+  font-weight: 600;
+}
+.title {
+  margin-top: 8px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.titleInput {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+}
+.excerptInput {
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.icon {
+  margin-top: 10px;
+  cursor: pointer;
+  color: blue;
+}
+.imgInput {
+  border-radius: 5px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+
+  width: 200px;
+}
+.writeText {
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.select_tag {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.writeInput {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.descInput {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.deletebtn {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(14, 13, 13);
+  font-weight: 600;
+  background-color: red;
+  cursor: pointer;
+
+  margin-left: 310px;
+  margin-top: -45px;
+  padding: 5px;
+}
+
+.tagsButton {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+.postbtn {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  align-content: center;
+}
+.fileInput {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.copete {
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.inputUrl {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.writeFormSelect {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.btnSubmit {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  align-content: center;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.btnSubmit:hover {
+  background-color: rgb(38, 25, 226);
+  transform: scale(1.1);
+}

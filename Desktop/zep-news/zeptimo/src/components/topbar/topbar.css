@@ -1,0 +1,221 @@
+.top {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  font-family: "Josefin Sans", sans-serif;
+}
+.fa-bars {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.topLeft,
+.topRight {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topIcon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: rgb(39, 18, 233);
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.topIcon:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.topListItem > h3 {
+  padding: 5px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.9);
+  display: inline-block;
+}
+
+.topListItem:hover {
+  color: gray;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.btn_search {
+  cursor: pointer;
+  color: blue;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .top {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .topLeft,
+  .topRight {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .topIcon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgb(39, 18, 233);
+    cursor: pointer;
+    margin-left: 2px;
+  }
+
+  .topIcon:hover {
+    color: red;
+    transform: scale(1.5);
+  }
+
+  .topCenter {
+    flex: 6;
+  }
+
+  .topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .topListItem {
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+  }
+
+  .topListItem > h3 {
+    padding: 5px;
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.9);
+    display: inline-block;
+  }
+
+  .topListItem:hover {
+    color: gray;
+  }
+
+  .topImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .topSearchIcon {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+}
+@media (max-width: 425px) {
+  .top {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .topCenter {
+    width: auto;
+    height: auto;
+    background-color: rgb(231, 31, 31);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    left: 0;
+    padding: 8px;
+
+    transition: 300ms ease left;
+  }
+  /* .topCenter:active {
+    left: 0;
+  } */
+
+  .fa-bars {
+    display: flex;
+  }
+  .topList {
+    flex-direction: row;
+  }
+  .topListItem {
+    font-size: 12px;
+
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .btn_search {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1300px) {
+}
+@media (max-width: 1400px) {
+}

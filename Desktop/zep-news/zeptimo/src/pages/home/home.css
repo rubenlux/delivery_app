@@ -1,0 +1,77 @@
+.title-post {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 25px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.title-post hr {
+  margin-left: 450px;
+  margin-top: -10px;
+  margin-right: 25px;
+  border-top: 5px solid rgb(82, 78, 78);
+}
+@media (max-width: 900px) {
+  .grid {
+    width: 100%;
+  }
+  .title-post {
+    margin-top: 30px;
+  }
+  .home {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .logoA {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .grid {
+    width: 100%;
+  }
+  .title-post {
+    border-bottom: 1px solid rgb(82, 78, 78);
+    margin-left: 20px;
+    margin-top: -70px;
+  }
+  .home {
+    margin-top: 0;
+    width: 100%;
+  }
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logoA {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .grid {
+    width: 425px;
+  }
+  .title-post {
+    border-bottom: 1px solid rgb(82, 78, 78);
+    margin-left: 20px;
+    margin-top: -70px;
+  }
+  /* .home {
+    margin-top: 0;
+    width: 425px;
+  } */
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logoA {
+    margin-left: 0;
+    margin-right: 0;
+    width: 425px;
+  }
+}

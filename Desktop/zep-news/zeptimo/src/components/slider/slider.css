@@ -1,0 +1,128 @@
+.box1 {
+  background-color: rgb(20, 10, 10);
+  height: 400px;
+}
+
+.conttainer {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.conttainer .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+  /* border: 1px solid #fff; */
+}
+.conttainer:hover .box {
+  transform: rotateY(25deg);
+}
+.conttainer .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.conttainer .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.conttainer .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.conttainer .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(29, 86, 165), #000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.conttainer .box:hover .imgBx:before {
+  opacity: 1;
+}
+.conttainer .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.conttainer .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.conttainer .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.conttainer .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.conttainer .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.conttainer .box:hover .content p {
+  transform: translateY(0px);
+}
+@media (max-width: 900px) {
+  .box1 {
+    height: 700px;
+    width: 100%;
+  }
+  .conttainer {
+    width: 100%;
+
+    margin-top: 210px;
+  }
+}
+@media (max-width: 767px) {
+  .box1 {
+    height: auto;
+    width: 100%;
+  }
+  .conttainer {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

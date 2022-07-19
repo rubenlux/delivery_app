@@ -1,0 +1,135 @@
+/* .carrusel {
+  height: 100vh;
+  display: flex;
+} */
+
+/* .carrusel-items {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 30px 0px;
+} */
+.carrusel-items {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: repeat(
+    2,
+    minmax(80px, max-content)
+  ); /*  repeat es para que se repita el 
+  numero de veces que se le indique  
+  es este caso se repite 2 veces, el primero va tener una altura de 100px y 
+  el segundo va tener una altura de max-content, es decir que si el contenido es menor que 100px  se va a ajustar a 100px, si el contenido es mayor que 100px se va a ajustar a ese valor, osea a 100px */
+  grid-gap: 5px;
+}
+/* .carrusel-item {
+  min-width: 300px;
+  max-width: 300px;
+  height: 200px;
+  outline: 2px solid black;
+  cursor: pointer;
+} */
+.carrusel-item {
+  cursor: pointer;
+  margin-bottom: -70px;
+}
+.carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carrusel-item img:hover {
+  transform: scale(1.1);
+}
+.carrusel-items2 {
+  display: grid;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  grid-template-columns: 300px auto 350px;
+  grid-gap: 25px;
+  grid-template-rows: repeat(1, minmax(100px, max-content));
+  text-align: center;
+}
+.titles {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: justify;
+}
+.carrusel-items3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(1, minmax(50px, max-content));
+  grid-gap: 5px;
+}
+.date-carrusel {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* .carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .carousel-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+} */
+@media screen and (max-width: 900px) {
+  .carrusel {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .title-post2 {
+    margin-top: -9px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(82, 78, 78);
+  }
+  .carrusel-items {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 30px 0px;
+  }
+  .carrusel-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .carrusel {
+    margin-top: 20px;
+  }
+  .title-post2 {
+    margin-top: -9px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(82, 78, 78);
+  }
+  hr {
+    display: none;
+  }
+
+  .carrusel-items {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+  .carrusel-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+}

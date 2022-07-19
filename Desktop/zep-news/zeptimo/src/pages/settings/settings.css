@@ -1,0 +1,116 @@
+.settings {
+  display: flex;
+}
+
+.settingsWrapper {
+  flex: 9;
+  padding: 20px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.settingsTitleUpdate {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(214, 16, 16);
+}
+
+.settingsBtnDelete {
+  background-color: red;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.settingsBtnDelete:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.settingsPP > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: white;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+.settingsPPButton:focus {
+  outline-style: none;
+}
+
+.settingsForm > label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.settingsPPInput {
+  width: 30%;
+}
+
+.settingsForm > input {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(20, 19, 19);
+}
+
+.settingsSubmitButton {
+  align-self: center;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsSubmitButton:hover {
+  background-color: rgb(1, 114, 114);
+}
+.settingsPassword {
+  background-color: #f2f3eb;
+}

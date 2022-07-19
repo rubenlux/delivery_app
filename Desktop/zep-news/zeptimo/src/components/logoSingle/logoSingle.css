@@ -1,0 +1,38 @@
+.logoSingle {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  justify-content: center;
+  background-color: black;
+  position: sticky;
+  margin-left: -600px;
+  margin-top: 0px;
+}
+.image-logo {
+  width: 100%;
+  height: auto;
+}
+.logoImgSingle {
+  margin-left: 566px;
+  margin-top: 5px;
+}
+.logoImgSingle:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 425px) {
+  .logoSingle {
+    height: 180px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: black;
+  }
+  .image-logo {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .logoImgSingle {
+    align-content: center;
+    width: 427px;
+  }
+}
